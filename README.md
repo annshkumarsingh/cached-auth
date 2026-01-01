@@ -150,7 +150,7 @@ Set up environment variables
 
 DATABASE_URL=postgresql://...
 REDIS_URL=redis://...
-JWT_SECRET="thisIStheCachedAuthJWT@123"
+JWT_SECRET=your_jwt_secret_key
 
 
 Start the development server
