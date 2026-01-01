@@ -1,9 +1,9 @@
 import { Pool } from "pg";
 
+if (!process.env.DATABASE_URL) {
+  throw new Error("DATABASE_URL is not defined");
+}
+
 export const pool = new Pool({
-  host: "localhost",
-  port: 5432,
-  user: "annshkumarsingh",
-  password: "aidevandwebdev",
-  database: "fetch_demo",
+  connectionString: process.env.DATABASE_URL,
 });
